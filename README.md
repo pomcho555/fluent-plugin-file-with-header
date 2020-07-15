@@ -2,9 +2,10 @@
 
 [Fluentd](https://fluentd.org/) output plugin to do something.
 
-TODO: write description for you plugin.
+Output plugin omit file with header.
 
 ## Installation
+Use RubyGems.
 
 ### RubyGems
 
@@ -34,10 +35,30 @@ You can generate configuration template:
 $ fluent-plugin-config-format output file-with-header
 ```
 
-You can copy and paste generated documents here.
+
+
+```
+   <match pattern>
+     @type file_with_header
+     headers time,host,req_id,user
+     path /logs
+     <format>
+       @type csv
+       fields time,host,rq_id,user
+     </format>
+   </match>
+```
+
+Output file like below.
+
+```
+time,host,req_id,user
+"2013/02/28 12:00:00","192.168.0.1","111","-"
+```
+
 
 ## Copyright
 
-* Copyright(c) 2020- Onoda Shigeaki
+* Copyright(c) 2020- pomcho555
 * License
   * Apache License, Version 2.0

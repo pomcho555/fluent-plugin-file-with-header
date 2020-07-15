@@ -4,11 +4,10 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 Gem::Specification.new do |spec|
   spec.name    = "fluent-plugin-file-with-header"
   spec.version = "0.1.0"
-  spec.authors = ["Onoda Shigeaki"]
-  spec.email   = ["TODO: Write your email"]
+  spec.authors = ["pomcho555"]
+  spec.email   = ["ono.fda03@gmail.com"]
 
-  spec.summary       = %q{TODO: Write a short summary, because Rubygems requires one.}
-  spec.description   = %q{TODO: Write a longer description or delete this line.}
+  spec.summary       = "Output file with header."
   spec.homepage      = "TODO: Put your gem's website or public repo URL here."
   spec.license       = "Apache-2.0"
 

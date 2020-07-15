@@ -1,8 +1,9 @@
 # fluent-plugin-file-with-header
 
-[Fluentd](https://fluentd.org/) output plugin to do something.
-
 Output plugin omit file with header.
+Default [out_file](https://github.com/fluent/fluentd/blob/master/lib/fluent/plugin/out_file.rb) plugin is not able to handle file header.
+
+This is useful plugin when you wanna put the header on csv file or something!
 
 ## Installation
 Use RubyGems.

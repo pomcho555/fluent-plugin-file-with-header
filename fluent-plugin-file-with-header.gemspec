@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.email   = ["ono.fda03@gmail.com"]
 
   spec.summary       = "Output file with header."
-  spec.homepage      = "TODO: Put your gem's website or public repo URL here."
+  spec.homepage      = "https://github.com/pomcho555/fluent-plugin-file-with-header"
   spec.license       = "Apache-2.0"
 
   test_files, files  = `git ls-files -z`.split("\x0").partition do |f|

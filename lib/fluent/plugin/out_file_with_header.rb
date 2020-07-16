@@ -23,7 +23,7 @@ require 'fluent/config/error'
 require 'fluent/plugin/file_util'
 
 module Fluent::Plugin
-  class FileWithHeaderOutput < Fluent::Plugin::Output
+  class FileWithHeaderOutput < Output
     Fluent::Plugin.register_output("file_with_header", self)
 
     helpers :formatter, :inject, :compat_parameters
